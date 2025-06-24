@@ -1,0 +1,129 @@
+
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.background-img{
+  background-image: url(image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row: 1/4;
+  grid-column: 1/5;
+  background-size: cover;
+  
+  
+  
+}
+
+
+
+
+main {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5.9vw;
+    line-height: 1.6;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 40% 40% 1fr;
+    grid-template-rows: 1fr 80% 1fr;
+    
+    
+}
+.text{
+  background-color: antiquewhite;
+  opacity: 0.5;
+}
+
+.quote-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    border: solid black;
+    
+    
+}
+i{
+  font-size: 3vw;
+}
+.quotation{
+  font-size: 5em;
+}
+#quote1{
+  align-self: flex-start;
+  height:25vh;
+}
+#quote2{
+  align-self: flex-end;
+  height:25vh;
+}
+
+
+
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+	margin: 0 0 1.6rem;
+}
+
+@media only screen and (min-width: 555px){
+.background-img{
+background-size:100%;
+}
+}
+
+/*html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+	margin: 0 0 1.6rem;
+}
+
+
+
+a {
+	color: #0056b3;
+	border-bottom: 2px solid transparent;
+	transition: all 0.5s ease-in-out;
+}
+
+hr {
+	margin: 3.2rem 1.6rem;
+	color: #555555;
+	border-color: #555555;
+}
+
+
+.main {background-color: violet; 
+
+
+
+
