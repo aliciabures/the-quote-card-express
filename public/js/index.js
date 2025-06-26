@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 const elements ={
     quote: document.getElementById("quote"),
@@ -40,7 +40,7 @@ setTimeout(loopThroughQuotes, 3000); */
 
 async function getRandomImage() {
 
-    const endpoint = `https://localhost:8080/api/v1/getRandomImage`;
+    const endpoint = `http://localhost:8080/api/v1/getRandomImage`;
     try {
         const response = await fetch(endpoint);
         const returnedData = await response.json();

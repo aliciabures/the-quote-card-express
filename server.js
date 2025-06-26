@@ -8,7 +8,7 @@ const port = 8080;
 require("dotenv").config();
 const cors = require('cors');
 const corsOptions ={
-    origin: `http://localhost:${port}`
+    origin: [`http://localhost:${port}`]
 
 }
 
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 async function getRandomImage() {
-    const endpoint = `https://api.unsplash.com/photos/random/?client_id=${process.env.CLIENT_ID}`;
+    const endpoint = `http://api.unsplash.com/photos/random/?client_id=${process.env.CLIENT_ID}`;
     
     try {
         const response = await fetch(endpoint);
